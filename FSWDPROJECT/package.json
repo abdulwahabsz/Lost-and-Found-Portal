@@ -1,0 +1,14 @@
+{
+  "name": "lost-and-found-portal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server",
+    "start": "concurrently \"npm start --prefix client\" \"npm run dev --prefix server\""
+  },
+  
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
